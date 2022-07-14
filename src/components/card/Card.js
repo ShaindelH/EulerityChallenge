@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import {Checkbox} from "@mui/material";
 
  const CardImage = styled.img`
   width: 100%;
   height: 350px;
     object-fit:cover;
     object-position:relative;
-  
   `;
 
-
-const StyledContainer = styled.div`
+export const PetCardContainer = styled.div`
   padding: 0px 12px 18px;
   background-color: #37474f;
   width: 400px;
@@ -18,12 +15,12 @@ const StyledContainer = styled.div`
   margin: 0px 5px 2px 5px;
   text-align: center;
   `
-  ;
+;
 
  export const ProfileCardContainer = styled.div`
   padding: 30px 12px 18px;
   background-color: #37474f;
-  width: 30%;
+  width: 20%;
   height: 80%;
   margin:auto;
   margin-top: 20px;
@@ -62,23 +59,7 @@ export const Button = styled.button`
     opacity: 0.8;
   }
   `
-export const PetCard = ({
-  petTitle,
-  petDescription,
-  petDate,
-  petImage,
-  selected,
-}) => (
-  <StyledContainer>
-      <Checkbox checked={selected} ></Checkbox>
-      <Card
-        title={petTitle}
-        date={petDate}  
-        description={petDescription}
-        image={petImage}
-      />
-      </StyledContainer>
-)
+
 
 export const Card = ({
     title,

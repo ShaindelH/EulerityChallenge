@@ -3,7 +3,7 @@ import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import {Header} from "../header/header";
 import {AboutMe} from "../aboutMe/aboutMe";
-import { PetProvider } from '../../state/petContext/petContext';
+import { PetProvider } from '../../state/petContext/PetsContext';
 
 export const App = () => { 
 
