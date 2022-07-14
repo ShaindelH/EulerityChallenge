@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, {useEffect, useReducer } from "react";
 import { PetReducer } from "../reducer/PetReducer";
 
 export const PetContext = React.createContext();

@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import { Input, PetCardContainer, Card } from "../card/Card";
+import { Input, PetCardContainer, Card } from "../styledComponents/styles";
 import { saveAs } from "file-saver";
 import { Stack, Grid, Button } from "@mui/material";
-import { PetContext } from "../../state/petContext/PetContext";
+import { PetContext } from "../../state/context/PetContext";
 import { Checkbox } from "@mui/material";
 
 export const Pets = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, ProfileCardContainer } from "../card/Card";
+import { Card, ProfileCardContainer } from "../styledComponents/styles";
 import img from "../profile.jpeg";
 
 export const AboutMe = () => {
@@ -13,8 +13,7 @@ export const AboutMe = () => {
              Looking forward to hearing back from you,
              Shaindel`}
           image={img}
-          date={""}
-          selected={"false"}
+          date={""}          
         ></Card>
       </ProfileCardContainer>
     </div>
