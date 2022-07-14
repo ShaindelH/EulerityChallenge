@@ -4,7 +4,6 @@ import { PetReducer } from "../reducer/PetReducer";
 export const PetContext = React.createContext();
 
 export const PetProvider = (props) => {
-    const[init, setInit] = useState([]);
   const [petState, dispatch] = useReducer(PetReducer, {
     pets: [],
   }
@@ -17,7 +16,6 @@ export const PetProvider = (props) => {
           return {...pet, selected: false, display:true}
       })
         dispatch({type: 'INITIALIZE', pets: tempPets})
-        console.log(petState.pets);
       });
     },[]);
 
